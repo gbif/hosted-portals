@@ -27,6 +27,8 @@ Do you have a logo? Please find a good digital version, making sure the backgrou
 
 If you do not have a logo, then the name of your site will be used instead.
 
+In addition to your logo, the site will include secondary branding in the footer indicating that it is 'powered by GBIF'
+
 **Styling**
 You can tweak the look of your hosted portal with a few variables to "theme" your site. For more advanced customizations, it is possible to write additional CSS (please say if you need to, then we might be able to help). The most important theme variables to consider are:
 * The primary colour - it is expected to work on a white background
