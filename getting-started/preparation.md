@@ -1,4 +1,4 @@
-For now you can just keep the answers to below questions in whatever format you like, we will add it to your portal later, once your Github account is linked to the project.
+For now you can just keep the answers to the questions below in whatever format you like. We will add this to your portal later, once your Github account is linked to the project.
 
 ## Step 1: Simple instructions for everyone to explore
 
