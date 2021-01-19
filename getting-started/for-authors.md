@@ -1,37 +1,6 @@
 # Getting started
 
-It is assumed that you have read the [preparatory material](https://github.com/gbif/hosted-portals/blob/main/getting-started/preparation.md)
-
-Every commit triggers a deployment to your test environment. It will take a couple of minutes for your changes to be visible online.
-
-
-## Jekyll
-The hosted portals are build using [Jekyll](https://jekyllrb.com). They have good documentation so you should read that. The content section in particular is useful to understand ([pages](https://jekyllrb.com/docs/pages/), [posts](https://jekyllrb.com/docs/posts/), [frontmatter](https://jekyllrb.com/docs/front-matter/), [data files](https://jekyllrb.com/docs/datafiles/)). Since the project is already setup (styling, templates, javascript, build and deploy etc), then you can ignore the other parts if you are not interested.
-
-### Run on your own machine
-You do not have to install anything locally, but you can if you wish to.
-
-**Running with Docker**
-If you have [Docker](https://www.docker.com/) installed, then you can run
-
-```
-docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:4.1.0 jekyll serve
-```
-
-It is a very convenient way to run the project, but does not perform as well as a [local installation](https://jekyllrb.com/)
-
-**Jekyll installation**
-If you have Jekyll installed, then you can start with
-
-```
-bundle exec jekyll serve
-```
-To build for production
-```
-bundle exec jekyll build
-```
-  
-## Configuring your site 
+## Your first edits
 Let us start by some simple configuration
 
 ### Changing the primary color
@@ -117,4 +86,43 @@ Open `_data/navigation.yml`. Add your new page to the list of menu items. Again 
 # And lets add an external link - could be to your Github repo
 - text: Report an issue
   href: https://github.com/gbif/hp-template/issues/new/choose
+```
+
+# What happens when you change something
+Your website is available online in 2 versions:
+
+* A test version that isn't indexed by Google and other search engines
+* And a production version intended for the public and for search engines. 
+
+Every commit triggers a deployment to your test environment. Meaning: when you save, then our servers pick up the change, then we rebuild the site and make the change available online. It will take a couple of minutes for your changes to be visible online.
+
+Any saved change will be available on your test site. To make it available on the production site, then you need to [do a release](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
+
+
+# Advanced
+
+## Jekyll
+The hosted portals are build using [Jekyll](https://jekyllrb.com). They have good documentation so you should read that. The content section in particular is useful to understand ([pages](https://jekyllrb.com/docs/pages/), [posts](https://jekyllrb.com/docs/posts/), [frontmatter](https://jekyllrb.com/docs/front-matter/), [data files](https://jekyllrb.com/docs/datafiles/)). Since the project is already setup (styling, templates, javascript, build and deploy etc), then you can ignore the other parts if you are not interested.
+
+### Run on your own machine
+You do not have to install anything locally, but you can if you wish to.
+
+**Running with Docker**
+If you have [Docker](https://www.docker.com/) installed, then you can run
+
+```
+docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:4.1.0 jekyll serve
+```
+
+It is a very convenient way to run the project, but does not perform as well as a [local installation](https://jekyllrb.com/)
+
+**Jekyll installation**
+If you have Jekyll installed, then you can start with
+
+```
+bundle exec jekyll serve
+```
+To build for production
+```
+bundle exec jekyll build
 ```
