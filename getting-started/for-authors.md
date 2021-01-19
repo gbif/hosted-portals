@@ -3,6 +3,16 @@
 ## Your first edits
 Let us start by some simple configuration
 
+### Edit an existing page
+Open the file `/about.md`.
+* Try changing the title in the [front matter](https://jekyllrb.com/docs/front-matter/) - the area between `---`.
+  * make sure it has the form `title: YOU TITLE GOES HERE`.
+  * If you are having issues, it might be because you are using special characters, then you need to quote the string like so: `title: "YOU TITLE GOES HERE"`
+* Save (commit) your change
+  * you will be asked to leave a comment describing what you change and why. This is really useful when multiple people work on the same project.
+
+This change will now be detected by the GBIF build server and the site will rebuild (your content transformed to HTML which can be read by the browser) and be deployed (copied to the internet) with your latest changes. This process can take several minutes. You can follow along by going to `https://builds.gbif.org/job/YOUR_REPO_NAME/` (e.g. https://builds.gbif.org/job/hp-legume/)
+
 ### Changing the primary color
 To change the primary color open `_config.yml` in the root directory. It is written in [yaml](https://dev.to/paulasantamaria/introduction-to-yaml-125f). The `algae.style.colors.primary` is the variable you need to change:
 ```
@@ -88,7 +98,7 @@ Open `_data/navigation.yml`. Add your new page to the list of menu items. Again 
   href: https://github.com/gbif/hp-template/issues/new/choose
 ```
 
-# What happens when you change something
+# Test and production site
 Your website is available online in 2 versions:
 
 * A test version that isn't indexed by Google and other search engines
