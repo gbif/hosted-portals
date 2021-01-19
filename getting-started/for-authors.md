@@ -1,7 +1,6 @@
 # Getting started
 
 ## Your first edits
-Let us start by some simple configuration
 
 ### Edit an existing page
 Open the file `/about.md`.
