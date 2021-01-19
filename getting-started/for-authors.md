@@ -5,8 +5,8 @@
 ### Edit an existing page
 Open the file `/about.md`.
 * Try changing the title in the [front matter](https://jekyllrb.com/docs/front-matter/) - the area between `---`.
-  * make sure it has the form `title: YOU TITLE GOES HERE`.
-  * If you are having issues, it might be because you are using special characters, then you need to quote the string like so: `title: "YOU TITLE GOES HERE"`
+  * make sure it has the form `title: YOUR TITLE GOES HERE`.
+  * If you are having issues, it might be because you are using special characters, then you need to quote the string like so: `title: "YOUR TITLE GOES HERE"`
 * Save (commit) your change
   * you will be asked to leave a comment describing what you change and why. This is really useful when multiple people work on the same project.
 
