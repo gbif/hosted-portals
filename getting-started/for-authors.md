@@ -1,27 +1,29 @@
 # Getting started
 
 ## Your first edits
+It is assumed that you do your changes using the Github website.
+
+### What happens when you do a change?
+* The change will be detected by the GBIF build server
+* The site will then rebuild (your content transformed to HTML which can be read by the browser) 
+* And then be deployed (made available on the internet).
+
+This process can take several minutes. You can follow along by going to `https://builds.gbif.org/job/YOUR_REPO_NAME/` (e.g. https://builds.gbif.org/job/hp-legume/)
 
 ### Edit an existing page
-Open the file `/about.md`.
+Open the file `/about.md` and enter edit mode (the pencil icon).
+
 * Try changing the title in the [front matter](https://jekyllrb.com/docs/front-matter/) - the area between `---`.
   * make sure it has the form `title: YOUR TITLE GOES HERE`.
   * If you are having issues, it might be because you are using special characters, then you need to quote the string like so: `title: "YOUR TITLE GOES HERE"`
 * Save (commit) your change
   * you will be asked to leave a comment describing what you change and why. This is really useful when multiple people work on the same project.
 
-What happens when you do a change?
-* The change will now be detected by the GBIF build server
-* the site will then rebuild (your content transformed to HTML which can be read by the browser) 
-* and then be deployed (made available on the internet).
-
-This process can take several minutes. You can follow along by going to `https://builds.gbif.org/job/YOUR_REPO_NAME/` (e.g. https://builds.gbif.org/job/hp-legume/)
-
 ### Changing the primary color
 Your site is using a theme (defined in `_config.yml` as `remote_theme: gbif/jekyll-hp-base-theme`) - the theme can be configured using some variables specific to that theme. One of them is the primary color.
 
 To change the primary color open `_config.yml` in the root directory. It is written in [yaml](https://dev.to/paulasantamaria/introduction-to-yaml-125f). The `algae.style.colors.primary` is the variable you need to change:
-```YAML
+```YAML
 algae:
   style:
     colors:
@@ -37,7 +39,7 @@ To change the logo open `_config.yml` in the root directory. It is written in [y
 A logo isn't a requirement, if none is provided then `title` field from `_config.yml` will be used instead.
 
 If your logo is online already then you can simply refer to that url. Else you need to upload the image file to `/assets/images/some_file.*` and reference it.
-```
+```YAML
 algae:
   logo: /assets/images/fungi.svg # Logo in navbar, will be displayed with 28px height
   logoAndTitle: false # include the title next to the logo
@@ -77,7 +79,7 @@ Now try changing to `layout: page`
 
 ### Add your page to the menu
 Open `_data/navigation.yml`. Add your new page to the list of menu items. Again this is written in yaml, so it is a good idea to learn at least the basics of it.
-```
+```YAML
 - text: About
   href: /about
 - text: Data
