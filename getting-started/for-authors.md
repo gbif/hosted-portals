@@ -18,14 +18,16 @@ What happens when you do a change?
 This process can take several minutes. You can follow along by going to `https://builds.gbif.org/job/YOUR_REPO_NAME/` (e.g. https://builds.gbif.org/job/hp-legume/)
 
 ### Changing the primary color
+Your site is using a theme (defined in `_config.yml` as `remote_theme: gbif/jekyll-hp-base-theme`) - the theme can be configured using some variables specific to that theme. One of them is the primary color.
+
 To change the primary color open `_config.yml` in the root directory. It is written in [yaml](https://dev.to/paulasantamaria/introduction-to-yaml-125f). The `algae.style.colors.primary` is the variable you need to change:
-```
+```YAML
 algae:
   style:
     colors:
       primary: "#fa5e97" # Use a HEX code please
 ```
-You can use an online [color picker](https://www.google.com/search?q=color+picker).
+You can use an online [color picker](https://www.google.com/search?q=color+picker) if you aren't sure how to generate a HEX color.
 
 If you run this locally, then you need to restart the project. Jekyll do not restart on changes in `_config.yml`.
 
