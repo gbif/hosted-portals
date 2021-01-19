@@ -29,7 +29,7 @@ algae:
 ```
 You can use an online [color picker](https://www.google.com/search?q=color+picker) if you aren't sure how to generate a HEX color.
 
-If you run this locally, then you need to restart the project. Jekyll do not restart on changes in `_config.yml`.
+If you [run this locally](#run-on-your-own-machine), then you need to restart the project. Jekyll do not restart on changes in `_config.yml`.
 
 ### Change the logo
 To change the logo open `_config.yml` in the root directory. It is written in [yaml](https://dev.to/paulasantamaria/introduction-to-yaml-125f).
