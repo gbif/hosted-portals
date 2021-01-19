@@ -1,3 +1,4 @@
+
 # Getting started
 
 ## Your first edits
@@ -31,14 +32,14 @@ algae:
 ```
 You can use an online [color picker](https://www.google.com/search?q=color+picker) if you aren't sure how to generate a HEX color.
 
-If you [run this locally](#run-on-your-own-machine), then you need to restart the project. Jekyll do not restart on changes in `_config.yml`.
+> If you [run this locally](#run-on-your-own-machine), then you need to restart the project. Jekyll do not restart on changes in `_config.yml`.
 
 ### Change the logo
 To change the logo open `_config.yml` in the root directory. It is written in [yaml](https://dev.to/paulasantamaria/introduction-to-yaml-125f).
 
 A logo isn't a requirement, if none is provided then `title` field from `_config.yml` will be used instead.
 
-If your logo is online already then you can simply refer to that url. Else you need to upload the image file to `/assets/images/some_file.*` and reference it.
+If your logo is online already then you can simply refer to that url. Else you need to upload the image file to `/assets/images/some_file.*` and reference it. 
 ```YAML
 algae:
   logo: /assets/images/fungi.svg # Logo in navbar, will be displayed with 28px height
@@ -116,10 +117,21 @@ Every commit triggers a deployment to your test environment. Meaning: when you s
 
 Any saved change will be available on your test site. To make it available on the production site, then you need to [do a release](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
 
+# How to 
 
-# Advanced
+## Upload a file
+* Navigate to the folder it should be placed in. E.g. `/assets/images/`.
+* Click `Add file` and choose `Upload files` from the dropdown.
 
-## Jekyll
+## Create a new file
+Useful if you need to create a new page or post
+* Navigate to the folder in Github
+* Click `Add file` and choose `Create new file`.
+* Write the name of your file (including extension e.g. `test.md`)
+
+Notice that you can add sub directories by writing `/` in your file name. E.g. `my-folder/my-file.md`
+
+## Get started using Jekyll
 The hosted portals are build using [Jekyll](https://jekyllrb.com). They have good documentation so you should read that. The content section in particular is useful to understand ([pages](https://jekyllrb.com/docs/pages/), [posts](https://jekyllrb.com/docs/posts/), [frontmatter](https://jekyllrb.com/docs/front-matter/), [data files](https://jekyllrb.com/docs/datafiles/)). Since the project is already setup (styling, templates, javascript, build and deploy etc), then you can ignore the other parts if you are not interested.
 
 ### Run on your own machine
