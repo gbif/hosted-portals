@@ -1,8 +1,8 @@
 # Custom domain names
 
-You should use a custom domain for your hosted portal.  This can be either an *apex domain* (like `gbif.zz` and usually also `www.gbif.zz`) or a *subdomain* name (like `biodiversity.tecala.zz`, when your institution is `tecala.zz` or `www.tecala.zz`).
+You should use a custom domain for your hosted portal.  This can be either an *apex domain* (like `gbif.zz` and usually also `www.gbif.zz`) or a *subdomain* name (like `data.tecala.zz`, when your institution is `tecala.zz` or `www.tecala.zz`).
 
-If your IT department is going to handle everything, you needn't read any further — tell them the domain or subdomain and send them this page.
+*If your IT department is going to handle everything, you needn't read any further — tell them the domain or subdomain and send them this page.*
 
 If you want a new domain, you will need to register it. There is usually an annual fee for this, and it's important to make sure the fee will continue to be paid year after year – your IT department might be best to arrange this.
 
@@ -16,13 +16,13 @@ If your DNS provider does *not* support `ANAME` or `ALIAS` records, create an `A
 
 Either way, create a `CNAME` record for `www` (e.g. `www.gbif.zz`) to point to `hosted-portal.gbif.org`.
 
-## Subdomains (`biodiversity.tecala.zz` etc)
+## Subdomains (`data.tecala.zz` etc)
 
-Create a single `CNAME` record for your subdomain (e.g. `biodiversity.tecala.zz`) to point to `hosted-portal.gbif.org`.
+Create a single `CNAME` record for your subdomain (e.g. `data.tecala.zz`) to point to `hosted-portal.gbif.org`.
 
-GBIF will create a TLS certificate using LetsEncrypt  This enables the site to work with secure "https://" connections.  Since your institution is probably already using a TLS certificate, it is a good idea to ensure GBIF has permission to do this.
+GBIF will create a TLS certificate using LetsEncrypt.  This enables the site to work with secure "https://" connections.  Since your institution is probably already using a TLS certificate, it is a good idea to ensure GBIF has permission to do this.
 
-Create a `CAA` record for `biodiversity.tecala.zz` with the value `CAA 0 issue "letsencrypt.org"`.
+Create a `CAA` record for the same subdomain (e.g. `data.tecala.zz`) with the value `CAA 0 issue "letsencrypt.org"`.
 
 (The `CAA` record is optional, unless your organization already has a `CAA` record for e.g. `tecala.zz`, in which case it is required.  Some DNS providers don't support creating `CAA` records — then you can just ignore it.)
 
