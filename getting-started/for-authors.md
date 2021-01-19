@@ -10,7 +10,12 @@ Open the file `/about.md`.
 * Save (commit) your change
   * you will be asked to leave a comment describing what you change and why. This is really useful when multiple people work on the same project.
 
-This change will now be detected by the GBIF build server and the site will rebuild (your content transformed to HTML which can be read by the browser) and be deployed (made available on the internet). This process can take several minutes. You can follow along by going to `https://builds.gbif.org/job/YOUR_REPO_NAME/` (e.g. https://builds.gbif.org/job/hp-legume/)
+What happens when you do a change?
+* The change will now be detected by the GBIF build server
+* the site will then rebuild (your content transformed to HTML which can be read by the browser) 
+* and then be deployed (made available on the internet).
+
+This process can take several minutes. You can follow along by going to `https://builds.gbif.org/job/YOUR_REPO_NAME/` (e.g. https://builds.gbif.org/job/hp-legume/)
 
 ### Changing the primary color
 To change the primary color open `_config.yml` in the root directory. It is written in [yaml](https://dev.to/paulasantamaria/introduction-to-yaml-125f). The `algae.style.colors.primary` is the variable you need to change:
