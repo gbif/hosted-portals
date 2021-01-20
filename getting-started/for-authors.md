@@ -1,7 +1,6 @@
 # Getting started
 Some people prefer to start with a simple example, others prefer to read the [technical document](https://jekyllrb.com/). This document is the former: a small "hello world" task with the goal to have your first edits visible on the website.
 
-## Your first edits
 We will assume that you make your changes using the GitHub website and that you have read the [preparation document](https://github.com/gbif/hosted-portals/blob/main/getting-started/preparation.md).
 
 ### What happens when you make a change?
