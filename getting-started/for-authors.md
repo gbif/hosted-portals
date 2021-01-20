@@ -148,7 +148,10 @@ It is a very convenient way to run the project, but does not perform as well as 
 
 **Jekyll installation**
 If you have Jekyll installed, then you can start with
-
+```
+bundle install
+```
+and then
 ```
 bundle exec jekyll serve
 ```
