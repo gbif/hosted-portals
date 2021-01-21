@@ -10,7 +10,7 @@ Put very simply: it is a website https://github.com/ where you can store files a
 This is where you will be doing all of your content editing, so it is worth investing time getting familiar with the interface.
 
 * Create a GitHub account
-* Send us the GitHub usernames that should be able to edit. (by email).
+* Send us the GitHub usernames that should be able to edit (you can send them to informatics@gbif.org).
 
 **Data scope**
 Your hosted portal will serve a subset of data (the scope) from GBIF. What is your data scope? Try to build it on https://www.gbif.org/occurrence/search by adding some filters. If that isn't possible then try to write it using the occurrence download APIs [predicate structure](https://www.gbif.org/developer/occurrence#predicates).
