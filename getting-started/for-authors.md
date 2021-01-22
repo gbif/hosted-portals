@@ -9,6 +9,7 @@ We will assume that you make your changes using the GitHub website and that you 
 * The site will then be deployed (made available on the internet).
 
 This process can take several minutes. You can follow along by finding your site on [GBIF's build server](https://builds.gbif.org/view/Hosted%20Portals/).
+Your testing site is available at `https://hp-project-name.gbif-staging.org`. See also [Where can you see your changes](#where-can-you-see-your-changes)
 
 ## Edit an existing page
 Open the file `/about.md` and enter edit mode (the pencil icon). The page has two parts. 
@@ -121,8 +122,8 @@ Open `/_data/navigation.yml`. Add your new page to the list of menu items. Again
 ## Where can you see your changes
 Your website is available online in 2 versions:
 
-* A test version that isn't indexed by Google and other search engines
-* And a production version intended for the public and for search engines. 
+* A test version that isn't indexed by Google and other search engines. E.g. https://hp-project-name.gbif-staging.org
+* And a production version intended for the public and for search engines. E.g. https://hp-project-name.gbif.org or on your own domain e.g. https://tecalabif.tec
 
 Every commit triggers a deployment to your test environment. Meaning: when you save, then our servers pick up the change, then we rebuild the site and make the change available online. It will take a couple of minutes for your changes to be visible online.
 
