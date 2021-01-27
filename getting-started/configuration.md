@@ -10,7 +10,7 @@ Many questions are best answered by the [Jekyll documentation](https://jekyllrb.
 
 You can configure your data scope in `/_includes/js/config.js`.
 
-Below is an example of a site configured to only show fungi (i.e. taxonKey=5 in the GBIF backbone). Any predicate can be used. The format is defined in the [GBIF developer documentation](https://www.gbif.org/developer/occurrence#predicates)
+Below is an example of a site configured to only show fungi (i.e. taxonKey=5 in the GBIF backbone). Any predicate can be used. The format is defined in the [GBIF developer documentation](https://www.gbif.org/developer/occurrence#predicates). There is a difference though: keys are `camelCase` (as in API v1) instead of `CONSTANT_CASE`.
 ```
 var siteConfig = {
   rootPredicate: { type: 'equals', key: 'taxonKey', value: 5 }
