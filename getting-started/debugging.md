@@ -10,11 +10,14 @@ A good start is to go to the build server and [locate your project](https://buil
 (/srv/jekyll/_data/navigation.yml): did not find expected '-' indicator while parsing a block collection at line 3 column 1 (Psych::SyntaxError)
 ```
 In this case it tells us what file the error is in and that there is a syntax error in the YAML.
+
 ![Jenkins console output](../assets/images/jenkins.png "Jenkins console output")
 
 
 ## Look at the latest changes
 If you look at the commit history of your project (e.g. `https://github.com/gbif/hp-legume/commits/master`), you can see what have changed and also what commit broke the build. Commits (changes) that build successfully will have a little green tick, and failed builds will have a red cross.  You can then select the commit that caused the failure and see what was changed.
+
+![Commit history](../assets/images/commithistory.png "Commit history")
 
 ## The project builds fine, but the site isn't as I expected
 These errors are more tricky to find, but again it can be a good idea to look at your latest changes in the commit history. So far we have seen these issues:
