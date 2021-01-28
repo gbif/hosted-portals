@@ -19,7 +19,7 @@ If you look at the commit history of your project (e.g. `https://github.com/gbif
 
 ![Commit history](../assets/images/commithistory.png "Commit history")
 
-## The project builds fine, but the site isn't as I expected
+## The project builds fine, but the site is not as I expected
 These errors are more tricky to find, but again it can be a good idea to look at your latest changes in the commit history. So far we have seen these issues:
 * Invalid file name. If you are expecting a webpage, then your file should probably end with with `.md`.
 * You forgot the [front matter](https://jekyllrb.com/docs/front-matter/) - the area between `---`
