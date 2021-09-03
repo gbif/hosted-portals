@@ -22,7 +22,7 @@ Create a single `CNAME` record for your subdomain (e.g. `data.tecala.zz`) to poi
 
 GBIF will create a TLS certificate using LetsEncrypt.  This enables the site to work with secure "https://" connections.  Since your institution is probably already using a TLS certificate, it is a good idea to ensure GBIF has permission to do this.
 
-Create a `CAA` record for the same subdomain (e.g. `data.tecala.zz`) with the value `CAA 0 issue "letsencrypt.org"`.
+Create a `CAA` record for the same subdomain (e.g. `data.tecala.zz`) with the value `0 issue "letsencrypt.org"`.
 
 (The `CAA` record is optional, unless your organization already has a `CAA` record for e.g. `tecala.zz`, in which case it is required.  Some DNS providers don't support creating `CAA` records — then you can just ignore it.)
 
