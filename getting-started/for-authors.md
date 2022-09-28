@@ -9,7 +9,7 @@ We will assume that you make your changes using the GitHub website and that you 
 * The site will then be deployed (made available on the internet).
 
 This process can take several minutes. You can follow along by finding your site on [GBIF's build server](https://builds.gbif.org/view/Hosted%20Portals/).
-Your testing site is available at `https://hp-project-name.gbif-staging.org`. See also [Where can you see your changes](#where-can-you-see-your-changes)
+Your testing site is available at `https://project-name.hp.gbif-staging.org`. See also [Where can you see your changes](#where-can-you-see-your-changes)
 
 ## Edit an existing page
 Open the file `/about.md` and enter edit mode (the pencil icon). The page has two parts. 
