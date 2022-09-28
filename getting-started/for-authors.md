@@ -100,7 +100,7 @@ Open `/_data/navigation.yml`. Add your new page to the list of menu items. Again
 - text: Links
   menu: # Dropdown menu (one level deep only)
   - text: Base theme demo
-    href: https://hp-base-theme.gbif-staging.org/
+    href: https://hp-theme.gbif-staging.org/
   - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
   - text: "Docs" # Title for block of menu items
   - text: Jekyll documentation
@@ -122,8 +122,8 @@ Open `/_data/navigation.yml`. Add your new page to the list of menu items. Again
 ## Where can you see your changes
 Your website is available online in 2 versions:
 
-* A test version that isn't indexed by Google and other search engines. E.g. https://hp-project-name.gbif-staging.org
-* And a production version intended for the public and for search engines. E.g. https://hp-project-name.gbif.org or on your own domain e.g. https://tecalabif.tec
+* A test version that isn't indexed by Google and other search engines. E.g. https://project-name.hp.gbif-staging.org
+* And a production version intended for the public and for search engines. E.g. https://project-name.hp.gbif.org or on your own domain e.g. https://tecalabif.tec
 
 Every commit triggers a deployment to your test environment. Meaning: when you save, then our servers pick up the change, then we rebuild the site and make the change available online. It will take a couple of minutes for your changes to be visible online.
 
