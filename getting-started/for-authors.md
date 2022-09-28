@@ -122,12 +122,12 @@ Open `/_data/navigation.yml`. Add your new page to the list of menu items. Again
 ## Where can you see your changes
 Your website is available online in 2 versions:
 
-* A test version that isn't indexed by Google and other search engines. E.g. https://project-name.hp.gbif-staging.org
-* And a production version intended for the public and for search engines. E.g. https://project-name.hp.gbif.org or on your own domain e.g. https://tecalabif.tec
+* A test version that isn't indexed by Google and other search engines, for example https://herbarium-germany.hp.gbif-staging.org/
+* And a production version intended for the public and for search engines, which will use your domain like https://www.gbif.us/, https://biodiversidad.co/ or https://specimens.hetnatuurhistorisch.nl/
 
-Every commit triggers a deployment to your test environment. Meaning: when you save, then our servers pick up the change, then we rebuild the site and make the change available online. It will take a couple of minutes for your changes to be visible online.
+Every commit triggers a deployment to your test environment. Wen you save our servers pick up the change, then we rebuild the site and make the change available online. It will take a couple of minutes for your changes to be visible online.
 
-Any saved change will be available on your test site. To make it available on the production site, then you need to [make a release](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
+Any saved change will be available on your test site. To make it available on the production site you need to [make a release](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
 
 ## What is next
 The hosted portals are build using [Jekyll](https://jekyllrb.com). They have good documentation so you should read that. The content section in particular is useful to understand ([pages](https://jekyllrb.com/docs/pages/), [posts](https://jekyllrb.com/docs/posts/), [frontmatter](https://jekyllrb.com/docs/front-matter/), [data files](https://jekyllrb.com/docs/datafiles/)). There is also a good section about the [directory structure](https://jekyllrb.com/docs/structure/). Since the project is already setup (styling, templates, Javascript, build and deploy etc), then you can ignore the other parts if you are not interested.
