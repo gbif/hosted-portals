@@ -2,4 +2,4 @@
 
 Support material for establishing the GBIF Hosted Portals.
 
-See [Getting Started](getting-started).
+See https://www.gbif.org/hosted-portals and [Getting Started](getting-started).
