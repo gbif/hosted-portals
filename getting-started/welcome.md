@@ -12,7 +12,7 @@ We also have a docker image you can use
 https://github.com/gbif/hosted-portals/tree/main/docker
 
 ## Test website
-The website is available in a test version. There is a link to it in the README if you repository (if yours isn’t available yet it will be shortly).
+The website is available in a test version. There is a link to it in the README in you repository (if yours isn’t available yet it will be shortly).
 
 Any changes you do in Github will be picked up automatically and be available on the website within a couple of minutes. The site asks Google and other search engines not to index it. So it shouldn’t show up in search results. But anyone with the link can see it.
  
